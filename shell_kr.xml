@@ -27,10 +27,9 @@ Revision 1.26<br/>
       </SUMMARY>
       <BODY>
         <p>
-          Executables must start with <code>#!/bin/bash</code> and a minimum
-          number of flags. Use <code>set</code> to set shell options so that
-          calling your script as <code>bash <i>&lt;script_name&gt;</i></code>
-          does not break its functionality.
+          실행파일은 <code>#!/bin/bash</code> 와 최소한의 flag로 시작해야 한다.
+          shell 옵션을 설정할때는 <code>set</code> 을 사용하고, script의 기능을
+          유지하기 위해서는 <code>bash <i>&lt;script_name&gt;</i> 와 같이 호출하라
         </p>
         <p>
           Restricting all executable shell scripts to <b>bash</b>
