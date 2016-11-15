@@ -32,14 +32,12 @@ Revision 1.26<br/>
           유지하기 위해서는 <code>bash <i>&lt;script_name&gt;</i> 와 같이 호출하라
         </p>
         <p>
-          Restricting all executable shell scripts to <b>bash</b>
-          gives us a consistent shell language that's installed on all our
-          machines.
+          모든 실행가능한 shell script 는 <b>bash</b> 로 만들어라. 이것을 통해  
+          모든 장치의 shell 언어를 통일시킬수 있을 것이다.
         </p>
         <p>
-          The only exception to this is where you're forced to by whatever
-          you're coding for. One example of this is Solaris SVR4 packages which
-          require plain Bourne shell for any scripts.
+          오직 한가지 예외는 너가 coding 하는 환경의 제한때문이다. 
+          예를들어 Bourn shell 을 사용해야하는 Solaris SVR4 패키지에서 개발할 경우이다. 
         </p>
       </BODY>
     </STYLEPOINT>
