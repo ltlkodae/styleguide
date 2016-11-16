@@ -36,7 +36,7 @@ Revision 1.26<br/>
           모든 장치의 shell 언어를 통일시킬수 있을 것이다.
         </p>
         <p>
-          오직 한가지 예외는 너가 coding 하는 환경의 제한때문이다. 
+          오직 한가지 예외는 coding 하는 환경의 제한때문이다. 
           예를들어 Bourn shell 을 사용해야하는 Solaris SVR4 패키지에서 개발할 경우이다. 
         </p>
       </BODY>
@@ -48,10 +48,9 @@ Revision 1.26<br/>
       </SUMMARY>
       <BODY>
         <p>
-          While shell scripting isn't a development language, it is used for
-          writing various utility scripts throughout Google.  This
-          style guide is more a recognition of its use rather than
-          a suggestion that it be used for widespread deployment.
+          Google 에서는 shell script 를 개발언어로 사용하지는 않으며, 다양한 
+          utility script 를 작성할때 사용한다. 본 문서는 script 를 광범위하게 
+          사용하기 보다는 이러한 방식으로 사용하는 편이 좋다고 생각한다
         </p>
         <p>
           Some guidelines:
