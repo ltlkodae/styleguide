@@ -29,15 +29,15 @@ Revision 1.26<br/>
         <p>
           실행파일은 <code>#!/bin/bash</code> 와 최소한의 flag로 시작해야 한다.
           shell 옵션을 설정할때는 <code>set</code> 을 사용하고, script의 기능을
-          유지하기 위해서는 <code>bash <i>&lt;script_name&gt;</i> 와 같이 호출하라
+          유지하기 위해서는 <code>bash <i>&lt;script_name&gt;</i> 와 같이 호출하라.
         </p>
         <p>
-          모든 실행가능한 shell script 는 <b>bash</b> 로 만들어라. 이것을 통해  
+          모든 실행가능한 shell script는 <b>bash</b> 로 만들어라. 이것을 통해  
           모든 장치의 shell 언어를 통일시킬수 있을 것이다.
         </p>
         <p>
-          오직 한가지 예외는 coding 하는 환경의 제한때문이다. 
-          예를들어 Bourn shell 을 사용해야하는 Solaris SVR4 패키지에서 개발할 경우이다. 
+          오직 한가지 예외는 coding하는 환경의 제한때문이다. 
+          예를들어 Bourn shell을 사용해야하는 Solaris SVR4 패키지에서 개발할 경우이다. 
         </p>
       </BODY>
     </STYLEPOINT>
@@ -48,30 +48,28 @@ Revision 1.26<br/>
       </SUMMARY>
       <BODY>
         <p>
-          Google 에서는 shell script 를 개발언어로 사용하지는 않으며, 다양한 
+          Google 에서는 shell script를 개발언어로 사용하지는 않으며, 다양한 
           utility script 를 작성할때 사용한다. 본 문서는 script 를 광범위하게 
-          사용하기 보다는 이러한 방식으로 사용하는 편이 좋다고 생각한다
+          사용하기 보다는 이러한 방식으로 사용하는 편이 좋다고 생각한다.
         </p>
         <p>
           Some guidelines:
           <ul>
             <li>
-              If you're mostly calling other utilities and are doing relatively
-              little data manipulation, shell is an acceptable choice for the
-              task.
+              utilty를 실행시키는 작업이 대부분이거나, 상대적으로 작은 
+              데이터를 다룰때 shell을 사용하는것이 좋다. 
             </li>
             <li>
-              If performance matters, use something other than shell.
+              만일 성능이 중요하다면, shell이 아닌 다른것을 사용해라.
             </li>
             <li>
-              If you find you need to use arrays for anything more than
-              assignment of <code>${PIPESTATUS}</code>, you should use Python.
+              만일 <code>${PIPESTATUS}</code>보다 더 큰 배열을 사용해야 한다면
+              Python 을 사용해야 한다.
             </li>
             <li>
-              If you are writing a script that is more than 100 lines long, you
-              should probably be writing it in Python instead. Bear in mind
-              that scripts grow. Rewrite your script in another language
-              early to avoid a time-consuming rewrite at a later date.
+              100라인 이상의 script라면, Python이 낫다. script의 사이즈가 
+              커지는것을 주의해라. 나중에 시간을 소비하기보다, 일찍 다른언어로 
+              script 를 만들어라.
             </li>
           </ul>
         </p>
