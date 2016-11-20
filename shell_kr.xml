@@ -88,16 +88,13 @@ Revision 1.26<br/>
     </SUMMARY>
     <BODY>
       <p>
-        It is not necessary to know what language a program is written in when
-        executing it and shell doesn't require an extension so we prefer not to
-        use one for executables.
+        프로그램을 실행할때 어떤 언어로 만들어졌는지 알 필요가 없으며, shell은 확장자
+        가 꼭 필요하진 않으므로, 실행파일에는 확장자를 쓰지 않는것을 더 선호한다.
       </p>
       <p>
-        However, for libraries it's important to know what language it is and
-        sometimes there's a need to have similar libraries in different
-        languages. This allows library files with identical purposes but
-        different languages to be identically named except for the
-        language-specific suffix.
+        그러나, 라이브러리는 어떤 언어로 만들어 졌는지가 중요하며, 비슷한 기능에 
+        개발 언어만 다른 경우가 있을수 있다. 이럴 경우 동일한 파일명에 언어별 
+        확장자로 구분될수 있다. 
       </p>
     </BODY>
   </STYLEPOINT>
