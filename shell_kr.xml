@@ -105,13 +105,13 @@ Revision 1.26<br/>
     </SUMMARY>
     <BODY>
       <p>
-        There are too many security issues with shell that make it nearly
-        impossible to secure sufficiently to allow SUID/SGID.  While bash does
-        make it difficult to run SUID, it's still possible on some platforms
-        which is why we're being explicit about banning it.
+        SUID/SGID를 사용할수 있을 만큼 shell에 보안을 설정하는것은 사실상
+        불가능하며, 많은 이슈가 있다. bash는 SUID를 실행하는 것이 어렵게 되어
+        있지만, 여전히 몇몇 플랫폼에서는 가능하기 때문에, 이를 명시적으로 
+        설명한다.
       </p>
       <p>
-        Use <code>sudo</code>  to provide elevated access if you need it.
+        권한이 필요할 경우 <code>sudo</code> 를 사용해라.
       </p>
     </BODY>
   </STYLEPOINT>
