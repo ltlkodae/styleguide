@@ -126,12 +126,10 @@ Revision 1.26<br/>
     </SUMMARY>
     <BODY>
       <p>
-        This makes it easier
-        to separate normal status from actual issues.
+        이를 통해 문제 발생과 정상상태를 쉽게 구분할수 있다.
       </p>
       <p>
-        A function to print out error messages along with other status
-        information is recommended.
+        에러 메세지함께 다른 상태 정보도 같이 출력하는 것을 권장한다.
         <CODE_SNIPPET>
           err() {
             echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')]: $@" &gt;&amp;2
@@ -156,11 +154,8 @@ Revision 1.26<br/>
     </SUMMARY>
     <BODY>
       <p>
-        Every file must have a top-level comment including a brief overview of
-        its contents.
-        A
-        copyright notice
-        and author information are optional.
+        파일의 가장 윗부분에 내용에 대한 대략적인 설명이 있어야 한다. 
+        copyright와 작성자는 선택적으로 입력해라.
       </p>
       <p>
         Example:
@@ -182,25 +177,23 @@ Revision 1.26<br/>
     </SUMMARY>
     <BODY>
       <p>
-        It should be possible for someone else to learn how to use your
-        program or to use a function in your library by reading the comments
-        (and self-help, if provided) without reading the code.
+        누군가가 프로그램이나 라이브러리에 있는 함수의 사용방법을 알려고 할때,
+        코드를 읽지 않고, 주석만 읽고 알수 있어야 한다.
       </p>
       <p>
-        All function comments should contain:
+        모든 함수 주석은 아래를 포함해야 한다:
         <ul>
           <li>
-            Description of the function
+            함수에 대한 설명
           </li>
           <li>
-            Global variables used and modified
+            사용되거나 값이 바뀌는 전역 변수
           </li>
           <li>
-            Arguments taken
+            입력 변수
           </li>
           <li>
-            Returned values other than the default exit status of the last
-            command run
+            마지막 커맨드의 기본 종료값이 아닌 반환 값 
           </li>
         </ul>
       </p>
@@ -237,9 +230,8 @@ Revision 1.26<br/>
     </SUMMARY>
     <BODY>
       <p>
-        This follows general Google coding comment practice. Don't comment
-        everything.  If there's a complex algorithm or you're doing something
-        out of the ordinary, put a short comment in.
+        이 내용은 일반적인 Google 실행 주석에 대한 내용이다. 모든것에 주석을 기록하지 
+        말아라. 복잡한 알고리즘이나 일반적이지 않은 동작일 경우 짧은 주석을 기록해라.
       </p>
     </BODY>
   </STYLEPOINT>
@@ -250,13 +242,11 @@ Revision 1.26<br/>
     </SUMMARY>
     <BODY>
       <p>
-        This matches the convention in the <a href="cppguide.xml?showone=TODO_주석#TODO_주석">C++
-          Guide</a>.
+        <a href="cppguide.xml?showone=TODO_Comments#TODO_Comments">C++ Guide</a>과
       </p>
       <p>
-         TODOs should include the string TODO in all caps, followed by your
-         username in parentheses. A colon is optional. It's preferable to put a
-         bug/ticket number next to the TODO item as well.
+         TODO 주석은 <code>TODO(이름)<code>을 포함해야 한다. 콜론(:)은 선택적이며,
+         뒤에 bug/ticket 번호를 입력하는 것이 좋다. 
       </p>
       <p>
         Examples:
@@ -282,9 +272,9 @@ Revision 1.26<br/>
     </SUMMARY>
     <BODY>
       <p>
-        Use blank lines between blocks to improve readability.  Indentation is
-        two spaces.  Whatever you do, don't use tabs.  For existing files, stay
-        faithful to the existing indentation.
+        가독성을 위해 블록사이에 빈 줄을 넣어라. 들여쓰기는 space 2칸이다.
+        어떠한 경우도 tab을 사용하지 말아라. 기존의 파일을 수정할 경우라면,
+        기존의 방식을 유지해라.
       </p>
     </BODY>
   </STYLEPOINT>
