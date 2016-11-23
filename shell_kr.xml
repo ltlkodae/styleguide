@@ -285,11 +285,9 @@ Revision 1.26<br/>
     </SUMMARY>
     <BODY>
       <p>
-        If you have to write strings that are longer than 80 characters, this
-        should be done with a here document or an embedded newline if possible.
-        Literal strings that have to be longer than 80 chars and can't sensibly
-        be split are ok, but it's strongly preferred to find a way to make it
-        shorter.
+        만일 80글자 이상의 문자열을 써야 할 경우, 'here document'처럼 하거나, 가능하다면
+        내장된 개행문자를 사용해라. 80글자 이상 되는 상수문자열과 분리할수 없는
+        문자열은 괜찮다. 하지만 짧은 문자열을 사용하는 방법을 찾는것이 훨씬 좋다.
       </p>
       <p>
         <CODE_SNIPPET>
@@ -309,17 +307,16 @@ Revision 1.26<br/>
 
   <STYLEPOINT title="파이프라인">
     <SUMMARY>
-      만일 모두 한줄로 작성하는 것이 적합하지 않다면 한줄에 하나의 파이프라인씩 작성한다.
+      만일 모두 한줄로 작성하는 것이 적합하지 않다면 한줄에 하나의 파이프라인을 작성한다.
     </SUMMARY>
     <BODY>
       <p>
-        If a pipeline all fits on one line, it should be on one line.
+        만일 한줄로 작성하는것이 알맞다면, 한줄에 작성해야 한다.
       </p>
       <p>
-        If not, it should be split at one pipe segment per line with the pipe
-        on the newline and a 2 space indent for the next section of the pipe.
-        This applies to a chain of commands combined using '|' as well as to
-        logical compounds using '||' and '&amp;&amp;'.
+        아니라면, 각 라인은 파이프 구분자로 분리하고, 새로운 줄은 space 2칸 들여쓰기를
+        해라. 이 방식은 '|' 를 활용해 연결된 커맨드 뿐만 아니라 '||'이나 '&amp;&amp;'
+        으로 연결된 논리 복합문도 마찬가지다.
         <CODE_SNIPPET>
           # All fits on one line
           command1 | command2
