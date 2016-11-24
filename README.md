@@ -1,6 +1,11 @@
 Google Style Guides - 한국어 번역
 ===================
 
+_현재 번역 완료된 문서는 
+없으며, 
+[Shell Style Guide][sh] 
+번역이 진행중이다. - 프로젝트내 korean 디렉토리 확인_
+
 모든 오픈소스 프로젝트는 각자의 style guide가 있다: 프로젝트에서 어떻게 코드를
 작성하는가에 대한 규칙들. 모든 코드가 일관된 스타일로 작성됬을때, 수많은 코드를 
 이해하기가 훨씬 쉬워진다.
@@ -18,11 +23,6 @@ Guide][sh], [HTML/CSS Style Guide][htmlcss], [JavaScript Style Guide][js],
 Style Guide][vim] 가 있다. 또한 [cpplint][cpplint], style guide 정책을 
 위한 tool, 그리고 [google-c-style.el][emacs], Google 스타일을 위한 Emacs 
 설정파일도 공개되어 있다.
-
-_현재 번역 완료된 문서는 
-없으며, 
-[Shell Style Guide][sh] 
-번역이 진행중이다. - 프로젝트내 korean 디렉토리 확인_
 
 만일 당신의 프로젝트에서 새로운 XML 문서 포맷을 만들고자 한다면, our [XML
 Document Format Style Guide][xml] 가 도움이 될것이다. style 규칙 외에도,
