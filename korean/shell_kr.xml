@@ -338,12 +338,11 @@ Revision 1.26<br/>
     </SUMMARY>
     <BODY>
       <p>
-        Loops in shell are a bit different, but we follow the same principles
-        as with braces when declaring functions. That is: <code>; then</code>
-        and <code>; do</code> should be on the same line as the if/for/while.
-        <code>else</code> should be on its own line and closing statements
-        should be on their own line vertically aligned with the opening
-        statement.
+        shel의 반복문은 조금 특이하지만, 함수를 선언할 때의 괄호와 비슷한 원칙을
+        적용한다. 바로  <code>; then</code> 과 <code>; do</code> 는
+        if/for/while 과 같은 줄에 있어야 한다는 것이다. <code>else</code> 는
+        새로운 줄에 있어야 하고, 구문을 종료시킬때는 새로운 줄에서 하고, 시작과 
+        수직선상에서 시작과 동일하게 맞춘다.
       </p>
       <p>
         Example:
