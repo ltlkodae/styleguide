@@ -383,11 +383,10 @@ Revision 1.26<br/>
     </SUMMARY>
     <BODY>
       <p>
-        The matching expressions are indented one level from the 'case' and
-        'esac'.  Multiline actions are indented another level.  In general,
-        there is no need to quote match expressions.  Pattern expressions
-        should not be preceded by an open parenthesis.  Avoid the
-        <code>;&amp;</code> and <code>;;&amp;</code> notations.
+        각 표현식은 'case'와 'esac'보다 한단계 더 들여쓰기를 한다. 여러줄의 실행문은
+        한단계 더 들여쓰기를 하여 작성한다. 일반적으로 각 표현식에 따옴표는 사용하지
+        않는다. 패턴 표현식앞에는 '('를 사용해서는 안된다. 
+        <code>;&amp;</code> and <code>;;&amp;</code> 표기법은 피해라.
       </p>
       <CODE_SNIPPET>
         case "${expression}" in
@@ -405,13 +404,11 @@ Revision 1.26<br/>
         esac
       </CODE_SNIPPET>
       <p>
-        Simple commands may be put on the same line as the pattern <i>and</i>
-        <code>;;</code> as long as the expression remains readable.  This is
-        often appropriate for single-letter option processing.  When the
-        actions don't fit on a single line, put the pattern on a line on its
-        own, then the actions, then <code>;;</code> also on a line of its own.
-        When on the same line as the actions, use a space after the close
-        parenthesis of the pattern and another before the <code>;;</code>.
+        간단한 명령들은 패턴, 가시성이 떨어지지 않는다면 <code>;;</code>과 
+        같은 줄에 입력할수 있다. 이것은 보통 한글자의 옵션을 저리하는 경우가
+        적합하다. 한줄로 작성하는것이 적합하지 않은 실행문의 경우, 새로운 줄에
+        작성하고 <code>;;</code> 을 새로운 줄에 작성해라. 같은 줄에 작성할
+        경우 ')'다음과, <code>;;</code>전에 space 1칸을 입력해라.
         </p>
       <CODE_SNIPPET>
         verbose='false'
