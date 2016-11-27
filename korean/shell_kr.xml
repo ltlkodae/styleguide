@@ -436,25 +436,23 @@ Revision 1.26<br/>
     </SUMMARY>
     <BODY>
       <p>
-        These are meant to be guidelines, as the topic seems too controversial for
-        a mandatory regulation.
+        이 가이드라인이 필수인지에 대해서는 논란의 여자기 있다.
         <br/>
-        They are listed in order of precedence.
+        순서에 따라 나열하였다.
       </p>
       <ol>
         <li>
-          Stay consistent with what you find for existing code.
+          현재 사용하는 형식을 유지해라
         </li>
         <li>
-          Quote variables, see <a href="#Quoting">Quoting section below</a>.
+          변수를 따옴표로 감싸라. 자세한건 <a href="#따옴표">아래의 따옴표 섹션</a>을 참고해라.
         </li>
         <li>
           <p>
-            Don't brace-quote single character shell
-            specials / positional parameters, unless strictly necessary
-            or avoiding deep confusion.
+            꼭 필요하거나, 혼돈을 방지하게 위해서가 아니라면, 스페셜 / 위치 변수는 중괄호로
+            묶지 말아라.
             <br/>
-            Prefer brace-quoting all other variables.
+            모든 변수를 중괄호로 묶는것이 낫다.
             <CODE_SNIPPET>
               # Section of <em>recommended</em> cases.
 

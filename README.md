@@ -13,7 +13,7 @@ _현재 번역 완료된 문서는
 "Style"은 많은 것을 포함한다. "변수 이름은 camelCase를 사용해라" 부터
 "전역변수는 절대 사용하지 말아라", "예외는 절대 사용하지 말아라" 까지.
 이 프로젝트는 우리가 사용하는 Google 코드의 style guidelines이다. 
-만일 너가 Google의 프로젝트를 수정한다면, 이 페이지에서 프로젝트에 
+만일 당신이 Google의 프로젝트를 수정한다면, 이 페이지에서 프로젝트에 
 적용되는 style guide를 볼 수 있다.
 
 [C++ Style Guide][cpp], [Objective-C Style Guide][objc], [Java Style
@@ -24,7 +24,7 @@ Style Guide][vim] 가 있다. 또한 [cpplint][cpplint], style guide 정책을
 위한 tool, 그리고 [google-c-style.el][emacs], Google 스타일을 위한 Emacs 
 설정파일도 공개되어 있다.
 
-만일 당신의 프로젝트에서 새로운 XML 문서 포맷을 만들고자 한다면, our [XML
+만일 당신의 프로젝트에서 새로운 XML 문서 포맷을 만들고자 한다면, 우리의 [XML
 Document Format Style Guide][xml] 가 도움이 될것이다. style 규칙 외에도,
 디자인에 대한 조언과, XML 문서 형식, 요소와 특성에 대한 내용도 포함되어 있다.
 
