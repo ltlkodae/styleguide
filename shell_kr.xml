@@ -495,22 +495,18 @@ Revision 1.26<br/>
     <SUMMARY>
       <ul>
         <li>
-          
-          Always quote strings containing variables, command substitutions,
-          spaces or shell meta characters, unless careful unquoted expansion
-          is required.
+          따옴표가 없이 확장해야 하는 경우가 아니라면, 따옴표가 있는 문자열은 항상 
+          변수, 커맨드 치환문, 공백 또는 메타문자가 포함되어야 한다.
         </li>
         <li>
-          쌍따옴
-          Prefer quoting strings that are "words"
-          (as opposed to command options or path names).
+          따옴표가 있는 문자열은 "단어" 와 같은 형식을 선호한다.
         </li>
         <li>
-         <em>상수</em>에 따옴표를 하지 말아라
+          <em>상수</em>에 따옴표를 하지 말아라.
         </li>
         <li>
-          Be aware of the quoting rules for
-          <a href="#Test,_%5B_and_%5B%5B">pattern matches in [[</a>.
+          <a href="#Test,_%5B_과_%5B%5B">[[에서의 패턴 매칭</a>에 대한
+          따옴표 규칙을 알아야 한다.
         </li>
         <li>
           꼭 $*을 사용해야할 필요가 없다면 "$@"을 사용해라.
