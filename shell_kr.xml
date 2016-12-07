@@ -243,9 +243,10 @@ Revision 1.26<br/>
     <BODY>
       <p>
         <a href="cppguide.xml?showone=TODO_Comments#TODO_Comments">C++ Guide</a>과
+        동일하다.
       </p>
       <p>
-         TODO 주석은 <code>TODO(이름)<code>을 포함해야 한다. 콜론(:)은 선택적이며,
+         TODO 주석은 <code>TODO(이름)</code>을 포함해야 한다. 콜론(:)은 선택적이며,
          뒤에 bug/ticket 번호를 입력하는 것이 좋다. 
       </p>
       <p>
@@ -583,9 +584,9 @@ Revision 1.26<br/>
     </SUMMARY>
     <BODY>
       <p>
-        Nested backticks require escaping the inner ones with <code>\</code>.
-        The <code>$(command)</code> format doesn't change when nested and is
-        easier to read.
+        이중 ` 을 사용할 경우 <code>\</code>을 사용해야 한다. 
+        이중으로 되어 있을경우 <code>$(command)</code>형식이 
+        가독성이 좋다 
       </p>
       <p>
         Example:
@@ -603,14 +604,14 @@ Revision 1.26<br/>
   <STYLEPOINT title="Test, [ 과 [[">
     <SUMMARY>
       <code>[[ ... ]]</code> 를 <code>[</code>,
-      <code>test</code> 이나 <code>/usr/bin/[</code> 보다 더 선호한다
+      <code>test</code> 이나 <code>/usr/bin/[</code> 보다 더 좋다.
     </SUMMARY>
     <BODY>
       <p>
-        <code>[[ ... ]]</code> reduces errors as no pathname expansion or word
-        splitting takes place between <code>[[</code> and <code>]]</code> and
-        <code>[[ ... ]]</code> allows for regular expression matching where
-        <code>[ ... ]</code> does not.
+        <code>[[ ... ]]</code>는 경로 확장이 없으며, 
+        <code>[[</code> 과 <code>]]</code>에서 단어가 구분됨으로써
+        에러를 줄여준다. 그리고 <code>[[ ... ]]</code>는 
+        <code>[ ... ]</code> 에서는 되지 않는 정규표현식 매칭도 할수 있다.
         <CODE_SNIPPET>
           # This ensures the string on the left is made up of characters in the
           # alnum character class followed by the string name.
