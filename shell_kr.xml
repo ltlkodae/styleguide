@@ -639,13 +639,13 @@ Revision 1.26<br/>
 
   <STYLEPOINT title="Testing 문자열">
     <SUMMARY>
-      가능하다면 따옴표 문자열보다 filter 문자를 사용해라
+      가능하다면 따옴표 문자열보다 filler 문자를 사용해라
     </SUMMARY>
     <BODY>
       <p>
-        Bash is smart enough to deal with an empty string in a test. So, given
-        that the code is much easier to read, use tests for empty/non-empty
-        strings or empty strings rather than filler characters.
+        Bash 는 test에서 빈 문자열 처리에 대한 훌륭한 방법을 제공한다.
+        따라서 가독성이 좋은 코드를 위해서, 빈 문자열을 직접 사용하기보다
+        filler 문자열을 사용해라.
         <CODE_SNIPPET>
           # Do this:
           if [[ "${my_var}" = "some_string" ]]; then
@@ -670,8 +670,8 @@ Revision 1.26<br/>
         </CODE_SNIPPET>
       </p>
       <p>
-        To avoid confusion about what you're testing for, explicitly use
-        <code>-z</code> or <code>-n</code>.
+        혼돈을 방지하기 위해서 <code>-z</code> 또는 <code>-n</code> 을
+        명시적으로 사용해라.
         <CODE_SNIPPET>
           # Use this
           if [[ -n "${my_var}" ]]; then
